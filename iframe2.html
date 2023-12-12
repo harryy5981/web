@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    fieldset{
+        margin: 30px 20px;
+    }
+    label.title{
+        width:80px;
+        float:left;
+    }
+    label.temper{
+        width:80px;
+        float:left;
+    }
+    label.wheather{
+        width:80px;
+        float:left;
+    }
+</style>
+<body>
+    <form method="post" action="temp.html"></form>
+    <h3>정보 입력하기</h3>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>나의 정보 입력</legend>
+            <ul>
+                <li>
+                    <label class="title">이름</label>
+                    <input type="text" id="uname" placeholder="input your name">
+                </li>
+                <li>
+                    <label class="temper">온도</label>
+                    <input type="number|range" value="">
+                </li>
+                <li>
+                    <label class="wheather">날씨</label>
+                    <input type="text" list="wheather">
+                    <datalist id="wheather">
+                        <option value="맑음"></option>
+                        <option value="흐림"></option>
+                        <option value="비"></option>
+                    </datalist>
+                </li>
+                <input style="border: 2px solid black; margin: 80px; " type="submit" value="알아보기">
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
