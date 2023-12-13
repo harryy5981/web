@@ -7,7 +7,54 @@ fieldset {
 <style>
 h3{
     text-align: center;
+}<!DOCTYPE html>
+<html lang="en">
+<style>
+fieldset {
+    padding : 20px;
+    margin : 40px;
+    border: 5px solid black;
+    width: 420px;
+    height: 80px;
+    text-align: center;
 }
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="frm" method="post" action="#" >
+        <fieldset>
+            <div class="check">
+                <input style="margin-bottom: 25px; margin-left:30px; width: 220px; height: 20px;" type="number" name="num" placeholder="몇 도의 옷차림새를 알고 싶나요?"><br>
+                <a href="#target"><input style="border: 2px solid black; margin-left: 10px; " type="submit" value="알아보기" onclick="Checkform()" ></a>
+            </div>
+        </fieldset>
+    </form>
+    <script>
+        function Checkform(){
+            var temp = document.getElementById("num");
+            if (temp < 15){
+                alert("추운날씨네요! 스크롤해서 내용을 확인해주세요.");
+            }
+            else if (temp < 25){
+                alert("온도가 적당하군요! 스크롤해 내용을 확인하세요.");
+            }
+            else {
+                alert("좀 덥겠네요. 스크롤해서 내용 확인해주세요.");
+            }
+        }
+    </script>
+    <div>
+        <img style="margin-left: 30px;margin-top: 20px;"src="https://as1.ftcdn.net/v2/jpg/06/28/64/74/1000_F_628647433_ysj8sOzQDVw86bg9I0vonhEbsmONBBIP.jpg" width="420" height="250">
+    </div>
+
+</body>
+</html>
 </style>
 <head>
     <title>check wheather & dress</title>
